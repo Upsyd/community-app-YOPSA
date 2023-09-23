@@ -152,7 +152,7 @@ docker build -t mifos-community-app .
 ```
 You can then run a Docker Container from the image above like this:
 ```
-docker run --name mifos-ui -it -d -p 80:80 mifos-community-app
+docker run --name mifos-maxfin-ui -it -d -p 80:80 mifos-maxfin-community-app
 ```
 
 Access the webapp on http://localhost in your browser.
