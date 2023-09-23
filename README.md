@@ -143,12 +143,12 @@ grunt serve
 
 This project publishes a Docker image (since #[3112](https://github.com/openMF/community-app/issues/3112)) available on https://hub.docker.com/r/openmf/community-app/.  Our [Dockerfile](Dockerfile) uses a Ruby and Node.JS base image to build the current repo and deploy the app on Nginx, which is exposed on port 80 within the container.  It can be used like this to access the webapp on http://localhost:9090 in your browser:
 
-    docker run --name community-app -it -p 9090:80 openmf/community-app
+    docker run --name community-app -it -p 9090:80 mifos-maxfin-community-app
 
 
 To locally build this Docker image from source (after `git clone` this repo), run:
 ```
-docker build -t mifos-community-app .
+docker build -t mifos-maxfin-community-app .
 ```
 You can then run a Docker Container from the image above like this:
 ```
